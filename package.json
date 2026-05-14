@@ -1,0 +1,33 @@
+{
+  "name": "ai-code-review-bot",
+  "version": "1.0.0",
+  "description": "GitHub App that automatically reviews pull requests using Claude AI",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "github",
+    "code-review",
+    "ai",
+    "claude"
+  ],
+  "author": "Jeremy Dilman",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.24.3",
+    "@octokit/auth-app": "^4.0.13",
+    "@octokit/rest": "^19.0.13",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.5",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0"
+  }
+}
